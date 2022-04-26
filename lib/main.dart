@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
+import 'UI/submitErrand.dart';
 
 void main() {
   // debugPaintSizeEnabled = true;
@@ -181,7 +180,12 @@ class MyApp extends StatelessWidget {
           ],
         ),
         floatingActionButton: FloatingActionButton.extended(
-          onPressed: () {}, //addErrand
+          onPressed: () {
+            Navigator.push (
+            context,
+            MaterialPageRoute (builder: (context)=> submitErrand(title: 'Add Errand Form',)),
+            );
+            }, //addErrand
           label: const Text('Add Errand'),
           icon: const Icon(Icons.add),
           backgroundColor: Colors.pink,
