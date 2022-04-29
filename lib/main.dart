@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'ui/login.dart';
+import 'ui/homescreen.dart';
+
 
 void main() => runApp(new MyApp());
 
@@ -12,7 +13,8 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(),
+      //home: LoginScreen(),
+      home: HomeScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
