@@ -2,8 +2,8 @@ This is the official code repository for Fika App
 You can be part of this amazing startup by making a small donation via:
 
 <p>
-  <a href="https://www.paypal.me/AbdennourT/10">
-      <img src="https://www.paypal.com/donate/?hosted_button_id=45A3RRNJMNAGQ" alt="paypal">
+  <a href="https://www.paypal.com/donate/?hosted_button_id=45A3RRNJMNAGQ">
+      <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal">
   </a>
 </p>
 
