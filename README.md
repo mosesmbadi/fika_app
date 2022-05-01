@@ -1,12 +1,14 @@
-<<<<<<< HEAD
-# fika_app
-=======
-# fika_app
-
 This is the official code repository for Fika App
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Documentation
+
+Fika is a mobiel app that help people run errands, find short-term workface and do other things. 
+
+The frontend wil be developed with flutter and backend in Django, with DRF being the APIs.
+
+Payment systems will be integrated with Mpesa.
+
+Users can sign in, book errands and pay for them.
 
 Here's a visual reference of what we are working on:
 https://www.behance.net/gallery/141606459/Fika-design-and-development
