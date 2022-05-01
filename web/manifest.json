@@ -1,6 +1,6 @@
 {
-    "name": "fika_app",
-    "short_name": "fika_app",
+    "name": "flutter_homeservice",
+    "short_name": "flutter_homeservice",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

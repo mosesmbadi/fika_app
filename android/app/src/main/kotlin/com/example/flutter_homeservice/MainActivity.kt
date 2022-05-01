@@ -1,4 +1,4 @@
-package com.example.fika_app
+package co.tarsoft.homeservice
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
-project(fika_app LANGUAGES CXX)
+project(flutter_homeservice LANGUAGES CXX)
 
-set(BINARY_NAME "fika_app")
+set(BINARY_NAME "flutter_homeservice")
 
 cmake_policy(SET CMP0063 NEW)
 

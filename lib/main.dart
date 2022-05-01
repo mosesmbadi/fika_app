@@ -1,51 +1,24 @@
 import 'package:flutter/material.dart';
-import 'ui/login.dart';
-import 'ui/homescreen.dart';
+import 'package:fika_app/screens/home_page.dart';
+import 'package:fika_app/splash_screen.dart';
 
-
-void main() => runApp(new MyApp());
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return new MaterialApp(
-      title: 'Fika',
-      theme: new ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      //home: LoginScreen(),
-      home: HomeScreen(),
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => new _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: LoginScreen(),
-    );
-  }
-
-  Container buildPage(Color color, String text) {
-    return Container(
-      color: color,
-      child: Center(
-        child: Text(
-          text,
-          style: TextStyle(
-            fontSize: 50.0,
-            color: Colors.white,
-          ),
-        ),
+      title: 'Fika Errands',
+      theme: ThemeData(
+        primarySwatch: Colors.yellow,
       ),
+      home: const SplashScreen(),
     );
   }
 }
