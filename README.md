@@ -1,4 +1,6 @@
 This is the official code repository for Fika App
+You can be part of this amazing startup by making a small donation via:
+https://www.paypal.com/donate/?hosted_button_id=45A3RRNJMNAGQ
 
 ## Documentation
 
