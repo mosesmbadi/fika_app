@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "844685267514",
+    "project_id": "fika-d1128",
+    "storage_bucket": "fika-d1128.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844685267514:android:f88a2e85deccdbcb95db03",
+        "android_client_info": {
+          "package_name": "co.fika.errands"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844685267514-bjdedf7toiug05k03vtua4t5gsjpbari.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.fika.errands",
+            "certificate_hash": "d729adb5b0f2263b5faf37cd94a43c62b957dd8e"
+          }
+        },
+        {
+          "client_id": "844685267514-bhc4e83v4pg693j8rg18cq16btp3poa5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz0ri0Qz75w3bjGz7BmhZh5j8W3RehZ4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844685267514-bhc4e83v4pg693j8rg18cq16btp3poa5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

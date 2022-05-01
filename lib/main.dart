@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:fika_app/screens/home_page.dart';
+import 'package:fika_app/login/SignUpPage.dart';
 import 'package:fika_app/splash_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
-  runApp(const MyApp());
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -16,9 +22,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Fika Errands',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.orange,
       ),
-      home: const SplashScreen(),
+      home: const SignUpPage(),
     );
   }
 }

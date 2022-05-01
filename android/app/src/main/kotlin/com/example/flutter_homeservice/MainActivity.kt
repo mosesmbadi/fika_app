@@ -1,4 +1,4 @@
-package co.tarsoft.homeservice
+package co.fika.errands
 
 import io.flutter.embedding.android.FlutterActivity
 
