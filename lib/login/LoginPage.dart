@@ -36,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
           Center(
             child: Padding(
               padding: const EdgeInsets.only(
-                  top: 110.0, right: 50.0, left: 40.0, bottom: 50.0),
+                  top: 70.0, right: 50.0, left: 40.0, bottom: 50.0),
               child: Text(
                 "Sign in",
                 style: TextStyle(

@@ -25,7 +25,7 @@ class BookingPage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Text("Our home services", style: TextStyle(fontSize: 20)),
+                Text("Our Errand Services", style: TextStyle(fontSize: 20)),
                 SizedBox(
                   height: 10,
                 ),
@@ -51,7 +51,7 @@ class BookingPage extends StatelessWidget {
                 Divider(),
                 ListTile(
                   leading: Icon(Icons.kitchen),
-                  title: Text("Event assitance"),
+                  title: Text("Event assistance"),
                   trailing: Icon(Icons.navigate_next),
                 ),
                 Divider(),
@@ -95,7 +95,7 @@ class ServicesGrid extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Basic\nHousekeeping",
+                Text("Personalized\nErrands",
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -117,7 +117,7 @@ class ServicesGrid extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Premium\nIroning",
+                Text("Short-term\nWorkforce",
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
@@ -139,7 +139,7 @@ class ServicesGrid extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text("Spring\nCleaning",
+                Text("Professional\nConsultation",
                     style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,

@@ -143,7 +143,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 padding:
                     const EdgeInsets.only(left: 22.0, right: 22.0, top: 25.0),
                 child: TextFormField(
-                  initialValue: "+998",
+                  initialValue: "+254",
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     filled: true,
