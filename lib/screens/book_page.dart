@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fika_app/screens/addErrand.dart';
 
 class BookingPage extends StatelessWidget {
   const BookingPage({Key? key}) : super(key: key);
@@ -175,6 +176,12 @@ class ServicesGrid extends StatelessWidget {
               ],
             ),
           ),
+          Scaffold(
+                floatingActionButton: FloatingActionButton(
+                onPressed: () => addErrands(),
+                child: const Icon(Icons.add),
+              ),
+          )
         ],
       ),
     );

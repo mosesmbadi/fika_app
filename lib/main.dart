@@ -1,7 +1,9 @@
+import 'package:fika_app/screens/addErrand.dart';
 import 'package:flutter/material.dart';
 import 'package:fika_app/screens/home_page.dart';
 import 'package:fika_app/login/SignUpPage.dart';
 import 'package:fika_app/splash_screen.dart';
+import 'package:fika_app/screens/addErrand.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 
@@ -24,7 +26,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: const SignUpPage(),
+      //home: const SignUpPage(),
+      home: const addErrands(),
     );
   }
 }
