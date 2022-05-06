@@ -122,8 +122,8 @@ class _addErrandsState extends State<addErrands> {
                 return Card(
                   margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(documentSnapshot['Title']),
-                    subtitle: Text(documentSnapshot['Description'].toString()),
+                    title: Text(documentSnapshot['title']),
+                    subtitle: Text(documentSnapshot['description'].toString()),
                     trailing: SizedBox(
                       width: 100,
                       child: Row(
