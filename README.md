@@ -17,11 +17,16 @@ You can be part of this amazing startup by making a small donation via:
 
 |            SignUp Screen            |            Login Screen             |
 | :---------------------------------: | :---------------------------------: |
-| ![](/assets/Screenshots/shot01.png) | ![](/assets/Screenshots/shot02.png) |
+|![shot01](https://user-images.githubusercontent.com/57032428/167271885-e0d62dd4-cbc7-4da0-9fc8-1168cb883028.PNG)
+                       | ![shot02](https://user-images.githubusercontent.com/57032428/167271913-11855191-72da-4f82-b8a9-cafd9ef67212.PNG)
+
+
 
 |             HomeScreen             |           Profile Screen           |
 | :--------------------------------: | :--------------------------------: |
-| ![](/assets/Screenshots/shot1.png) | ![](/assets/Screenshots/shot3.png) |
+|            ![shot1](https://user-images.githubusercontent.com/57032428/167271918-788eca8b-0efe-44aa-8dd1-36dceaa0d34f.PNG)
+                          |    ![shot3](https://user-images.githubusercontent.com/57032428/167271927-677518d5-7246-4548-940a-181e92f473c5.PNG)
+    |
 
 ## Todos
 
