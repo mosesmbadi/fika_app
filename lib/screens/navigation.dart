@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:fika_app/screens/account_page.dart';
-import 'package:fika_app/screens/book_page.dart';
 import 'package:fika_app/screens/home.dart';
 import 'package:fika_app/screens/help_page.dart';
 import 'package:fika_app/screens/inbox_page.dart';
@@ -35,13 +34,6 @@ class _MyHomePageState extends State<MyHomePage> {
   final items = [
     const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
     const BottomNavigationBarItem(icon: Icon(Icons.inbox), label: "Inbox"),
-    /*const BottomNavigationBarItem(
-        icon: Icon(
-          Icons.add_circle_rounded,
-          color: Colors.grey,
-          size: 35,
-        ),
-        label: "Book Now"),*/
     const BottomNavigationBarItem(icon: Icon(Icons.help), label: "Help"),
     const BottomNavigationBarItem(
         icon: Icon(Icons.account_circle), label: "Account"),
@@ -56,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: _onItemTapped,
             currentIndex: _selectedIndex,
             elevation: 10,
-            backgroundColor: Colors.yellow,
+            backgroundColor: Color.fromARGB(255, 255, 177, 59),
             selectedItemColor: Colors.black,
             type: BottomNavigationBarType.fixed,
             items: items),

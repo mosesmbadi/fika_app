@@ -15,10 +15,18 @@ You can be part of this amazing startup by making a small donation via:
 - Can add errands from firestore and have them display on the app in real time
 - Errands can be added on the app and they appear in firestore in real time
 
+|            SignUp Screen            |            Login Screen             |
+| :---------------------------------: | :---------------------------------: |
+| ![](/assets/Screenshots/shot01.png) | ![](/assets/Screenshots/shot02.png) |
+
+|             HomeScreen             |           Profile Screen           |
+| :--------------------------------: | :--------------------------------: |
+| ![](/assets/Screenshots/shot1.png) | ![](/assets/Screenshots/shot3.png) |
+
 ## Todos
 
-- Change description field from int to String
 - Connect profile with errands/database
+- Solve the annoying Bad state error when uploading errands from phone
 - Display info of logged in user in the profiles section
 
 To run the project locally, clone this repository then use the followimg commands:
@@ -41,3 +49,5 @@ Users can sign in, book errands and pay for them.
 Here's a visual reference of what we are working on: [Overview](https://www.behance.net/gallery/141606459/Fika-design-and-development).
 
 Here's the first draft of the overview of Fika App Documentation: [Docs](https://docs.google.com/document/d/14lMqh4H71angj-gOWGxL4tWIY2Wpjuz_or3u2SEjUOs/edit?usp=sharing).
+
+And here's a visual guide to the overal systems design: [Docs](https://www.behance.net/gallery/143243959/Systems-Design-for-Fika-Errands).

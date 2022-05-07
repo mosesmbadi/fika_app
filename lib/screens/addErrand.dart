@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-
 class addErrands extends StatefulWidget {
   const addErrands({Key? key}) : super(key: key);
 
@@ -50,12 +49,8 @@ class _addErrandsState extends State<addErrands> {
                   decoration: const InputDecoration(labelText: 'Title'),
                 ),
                 TextField(
-                  keyboardType:
-                      const TextInputType.numberWithOptions(decimal: true),
                   controller: _descriptionController,
-                  decoration: const InputDecoration(
-                    labelText: 'Description',
-                  ),
+                  decoration: const InputDecoration(labelText: 'Description'),
                 ),
                 const SizedBox(
                   height: 20,
@@ -64,18 +59,18 @@ class _addErrandsState extends State<addErrands> {
                   child: Text(action == 'create' ? 'Create' : 'Update'),
                   onPressed: () async {
                     final String? name = _nameController.text;
-                    final String? description =_descriptionController.text;
+                    final String? description = _descriptionController.text;
                     if (name != null && description != null) {
                       if (action == 'create') {
                         // Persist a new errand to Firestore
-                        await _errandss.add({"title": name, "decription": description});
+                        await _errandss
+                            .add({"title": name, "decription": description});
                       }
 
                       if (action == 'update') {
                         // Update the errand
-                        await _errandss
-                            .doc(documentSnapshot!.id)
-                            .update({"title": name, "description": description});
+                        await _errandss.doc(documentSnapshot!.id).update(
+                            {"title": name, "description": description});
                       }
 
                       // Clear the text fields
@@ -122,7 +117,7 @@ class _addErrandsState extends State<addErrands> {
                   margin: const EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(documentSnapshot['title']),
-                    subtitle: Text(documentSnapshot['description'].toString()),
+                    subtitle: Text(documentSnapshot['description']),
                     trailing: SizedBox(
                       width: 100,
                       child: Row(
