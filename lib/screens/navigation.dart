@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fika_app/screens/account_page.dart';
 import 'package:fika_app/screens/book_page.dart';
-import 'package:fika_app/screens/events_example.dart';
+import 'package:fika_app/screens/home.dart';
 import 'package:fika_app/screens/help_page.dart';
 import 'package:fika_app/screens/inbox_page.dart';
 import 'package:fika_app/widgets/calendar.dart';
@@ -21,7 +21,7 @@ class _MyHomePageState extends State<MyHomePage> {
   static const List<Widget> _widgetOptions = <Widget>[
     Calendar(),
     InboxPage(),
-    BookingPage(),
+    //BookingPage(),
     HelpPage(),
     AccountPage(),
   ];
@@ -35,13 +35,13 @@ class _MyHomePageState extends State<MyHomePage> {
   final items = [
     const BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
     const BottomNavigationBarItem(icon: Icon(Icons.inbox), label: "Inbox"),
-    const BottomNavigationBarItem(
+    /*const BottomNavigationBarItem(
         icon: Icon(
           Icons.add_circle_rounded,
           color: Colors.grey,
           size: 35,
         ),
-        label: "Book Now"),
+        label: "Book Now"),*/
     const BottomNavigationBarItem(icon: Icon(Icons.help), label: "Help"),
     const BottomNavigationBarItem(
         icon: Icon(Icons.account_circle), label: "Account"),

@@ -10,7 +10,7 @@ import '/login/smsPage.dart';
 import '/login/update_password.dart';
 import '/login/SignUpPage.dart';
 import '/main.dart';
-import '/screens/home_page.dart';
+import '../screens/navigation.dart';
 
 FirebaseAuth _authUser = FirebaseAuth.instance;
 

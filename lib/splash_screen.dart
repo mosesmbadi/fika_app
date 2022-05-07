@@ -2,7 +2,7 @@ import 'dart:async';
 
 // import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-import 'package:fika_app/screens/home_page.dart';
+import 'package:fika_app/screens/navigation.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 // import 'package:kptm_social_media_app/screens/login_screen.dart';

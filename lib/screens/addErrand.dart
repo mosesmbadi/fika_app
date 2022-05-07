@@ -14,7 +14,7 @@ class addErrands extends StatefulWidget {
 class _addErrandsState extends State<addErrands> {
   // text fields' controllers
   final TextEditingController _nameController = TextEditingController();
-  final TextEditingController _priceController = TextEditingController();
+  final TextEditingController _descriptionController = TextEditingController();
 
   final CollectionReference _errandss =
       FirebaseFirestore.instance.collection('errands');
@@ -27,7 +27,7 @@ class _addErrandsState extends State<addErrands> {
     if (documentSnapshot != null) {
       action = 'update';
       _nameController.text = documentSnapshot['title'];
-      _priceController.text = documentSnapshot['description'].toString();
+      _descriptionController.text = documentSnapshot['description'];
     }
 
     await showModalBottomSheet(
@@ -52,7 +52,7 @@ class _addErrandsState extends State<addErrands> {
                 TextField(
                   keyboardType:
                       const TextInputType.numberWithOptions(decimal: true),
-                  controller: _priceController,
+                  controller: _descriptionController,
                   decoration: const InputDecoration(
                     labelText: 'Description',
                   ),
@@ -64,24 +64,23 @@ class _addErrandsState extends State<addErrands> {
                   child: Text(action == 'create' ? 'Create' : 'Update'),
                   onPressed: () async {
                     final String? name = _nameController.text;
-                    final double? price =
-                        double.tryParse(_priceController.text);
-                    if (name != null && price != null) {
+                    final String? description =_descriptionController.text;
+                    if (name != null && description != null) {
                       if (action == 'create') {
                         // Persist a new errand to Firestore
-                        await _errandss.add({"title": name, "decription": price});
+                        await _errandss.add({"title": name, "decription": description});
                       }
 
                       if (action == 'update') {
                         // Update the errand
                         await _errandss
                             .doc(documentSnapshot!.id)
-                            .update({"title": name, "description": price});
+                            .update({"title": name, "description": description});
                       }
 
                       // Clear the text fields
                       _nameController.text = '';
-                      _priceController.text = '';
+                      _descriptionController.text = '';
 
                       // Hide the bottom sheet
                       Navigator.of(context).pop();

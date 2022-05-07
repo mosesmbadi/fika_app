@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fika_app/screens/events_example.dart';
+import 'package:fika_app/screens/home.dart';
 
 class Calendar extends StatelessWidget {
   const Calendar({
@@ -11,6 +11,6 @@ class Calendar extends StatelessWidget {
     return SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: const TableEventsExample());
+        child: const home());
   }
 }
